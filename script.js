@@ -1,6 +1,13 @@
 const reveals = [...document.querySelectorAll('.reveal')];
 const statNumbers = [...document.querySelectorAll('.stat-number')];
 const marqueeTrack = document.querySelector('.marquee-track');
+const siteHeader = document.querySelector('.site-header');
+const navLinks = [...document.querySelectorAll('.top-nav a')];
+const sectionById = new Map(
+  ['services', 'products', 'why', 'contact']
+    .map((id) => [id, document.getElementById(id)])
+    .filter(([, el]) => el)
+);
 
 if (marqueeTrack) {
   marqueeTrack.innerHTML = marqueeTrack.innerHTML + marqueeTrack.innerHTML;
@@ -29,6 +36,40 @@ function revelsWithDelay(elements) {
     return el;
   });
 }
+
+function updateHeaderState() {
+  if (!siteHeader) {
+    return;
+  }
+  siteHeader.classList.toggle('is-scrolled', window.scrollY > 24);
+}
+
+function updateActiveNav() {
+  if (!navLinks.length || !sectionById.size) {
+    return;
+  }
+
+  const marker = window.scrollY + window.innerHeight * 0.32;
+  let currentId = 'services';
+
+  sectionById.forEach((section, id) => {
+    if (section && section.offsetTop <= marker) {
+      currentId = id;
+    }
+  });
+
+  navLinks.forEach((link) => {
+    const href = link.getAttribute('href') || '';
+    link.classList.toggle('is-active', href === `#${currentId}`);
+  });
+}
+
+updateHeaderState();
+updateActiveNav();
+window.addEventListener('scroll', () => {
+  updateHeaderState();
+  updateActiveNav();
+});
 
 const statsObserver = new IntersectionObserver(
   (entries, observer) => {
@@ -120,7 +161,7 @@ if (canvas) {
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(112, 216, 255, 0.8)';
+      ctx.fillStyle = 'rgba(66, 143, 255, 0.45)';
       ctx.fill();
 
       for (let j = i + 1; j < particles.length; j += 1) {
@@ -133,7 +174,7 @@ if (canvas) {
           ctx.beginPath();
           ctx.moveTo(p.x, p.y);
           ctx.lineTo(q.x, q.y);
-          ctx.strokeStyle = `rgba(120, 156, 255, ${0.26 - dist / (maxDistance * 4)})`;
+          ctx.strokeStyle = `rgba(110, 142, 210, ${0.2 - dist / (maxDistance * 5)})`;
           ctx.lineWidth = 0.85;
           ctx.stroke();
         }
