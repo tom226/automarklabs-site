@@ -312,6 +312,18 @@ a {
   line-height: 1.7;
 }
 
+.service-card a {
+  display: inline-block;
+  margin-top: 14px;
+  color: #2f56a1;
+  font-weight: 600;
+}
+
+.service-card a:hover,
+.service-card a:focus-visible {
+  color: #1f3d78;
+}
+
 .products-grid {
   margin-top: 40px;
   display: grid;
