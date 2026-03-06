@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoMark Labs | Luxury AI Engineering</title>
+    <meta
+      name="description"
+      content="AutoMark Labs builds AI products, SaaS systems, and cloud-native platforms with precision and elegance."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="particle-network" aria-hidden="true"></canvas>
+    <div class="grid-atmosphere" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="brand">AutoMark Labs</div>
+      <nav class="top-nav">
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="ghost-btn">Start Project</button>
+    </header>
+
+    <main>
+      <section class="hero section-pad" id="top">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <p class="eyebrow reveal">Luxury-tech execution for bold companies</p>
+        <h1 class="hero-title reveal">
+          Build with
+          <span class="gradient-text">AI precision</span>
+          and product elegance.
+        </h1>
+        <p class="hero-copy reveal">
+          We design and ship modern digital systems that feel as premium as they perform.
+          From AI assistants to full SaaS platforms, every detail is crafted for impact.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a class="cta-btn" href="#contact">Book a Discovery Call</a>
+          <a class="link-btn" href="#products">Explore Products</a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <article class="stat-card">
+            <p class="stat-number" data-target="24">0</p>
+            <p class="stat-label">Active Builds</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-number" data-target="97">0</p>
+            <p class="stat-label">Client Satisfaction %</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-number" data-target="11">0</p>
+            <p class="stat-label">Countries Served</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-number" data-target="180">0</p>
+            <p class="stat-label">Automations Delivered</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="marquee-wrap" aria-label="Products and services marquee">
+        <div class="marquee-track">
+          <span>AI Assistants</span>
+          <span>SaaS Engineering</span>
+          <span>Cloud Platforms</span>
+          <span>Data Intelligence</span>
+          <span>KheloFit</span>
+          <span>TheNurseryGreen</span>
+          <span>HealthWise</span>
+          <span>Product Strategy</span>
+          <span>Consulting</span>
+          <span>AI Automation</span>
+        </div>
+      </section>
+
+      <section class="section-pad" id="services">
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2>High-performance engineering, tailored for scale</h2>
+        </div>
+
+        <div class="card-grid services-grid">
+          <article class="service-card reveal">
+            <h3>SaaS Platforms</h3>
+            <p>From MVP to enterprise-grade platforms with resilient architecture and polished UX.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>AI Assistants</h3>
+            <p>Custom copilots, chat flows, and workflow agents that improve speed and decision-making.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Product Development</h3>
+            <p>Design systems, frontend architecture, backend APIs, and launch-ready products.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Data Intelligence</h3>
+            <p>Data pipelines, analytics layers, and actionable dashboards for strategic insights.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Cloud Engineering</h3>
+            <p>Secure cloud deployments, CI/CD, observability, and performance tuning at scale.</p>
+          </article>
+          <article class="service-card reveal">
+            <h3>Consulting</h3>
+            <p>Technology roadmap, architecture audits, and growth-focused product strategy.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-pad" id="products">
+        <div class="section-head reveal">
+          <p class="eyebrow">Products</p>
+          <h2>Purpose-built ventures by AutoMark Labs</h2>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card p1 reveal">
+            <p class="product-kicker">Fitness Ecosystem</p>
+            <h3>KheloFit <span aria-hidden="true">🏋️</span></h3>
+            <p>Gamified health tracking, workout intelligence, and performance-driven community features.</p>
+            <a href="#" aria-label="Learn more about KheloFit">View Product</a>
+          </article>
+
+          <article class="product-card p2 reveal">
+            <p class="product-kicker">Smart Nursery Platform</p>
+            <h3>TheNurseryGreen <span aria-hidden="true">🌿</span></h3>
+            <p>Plant care automation, supply chain insights, and storefront systems for modern growers.</p>
+            <a href="#" aria-label="Learn more about TheNurseryGreen">View Product</a>
+          </article>
+
+          <article class="product-card p3 reveal">
+            <span class="ribbon">Coming Soon</span>
+            <p class="product-kicker">Digital Health Suite</p>
+            <h3>HealthWise <span aria-hidden="true">❤️‍🩺</span></h3>
+            <p>Personalized preventive-care intelligence with patient-centric experiences and secure data flows.</p>
+            <a href="#" aria-label="Learn more about HealthWise">Get Early Access</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-pad" id="why">
+        <div class="section-head reveal">
+          <p class="eyebrow">Why AutoMark Labs</p>
+          <h2>Design discipline meets engineering depth</h2>
+        </div>
+
+        <div class="why-layout">
+          <aside class="floating-badge reveal" aria-label="Company trust badge">
+            <p>Trusted by ambitious founders and growth-stage teams</p>
+            <div class="badge-chip">Precision Delivery Model</div>
+          </aside>
+
+          <div class="why-grid">
+            <article class="why-card reveal">
+              <h3>Outcome-First Builds</h3>
+              <p>Every sprint ties to measurable business value, not just feature count.</p>
+            </article>
+            <article class="why-card reveal">
+              <h3>AI-Native Thinking</h3>
+              <p>We integrate intelligence at architecture level, not as superficial add-ons.</p>
+            </article>
+            <article class="why-card reveal">
+              <h3>Premium Product Craft</h3>
+              <p>Elegant interfaces and crisp interactions that strengthen trust and adoption.</p>
+            </article>
+            <article class="why-card reveal">
+              <h3>Speed with Reliability</h3>
+              <p>Fast iteration cycles supported by robust cloud and observability practices.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad stack" id="stack">
+        <div class="section-head reveal">
+          <p class="eyebrow">Tech Stack</p>
+          <h2>16 technologies we use to ship confidently</h2>
+        </div>
+
+        <div class="chip-wrap reveal" role="list" aria-label="Technology stack list">
+          <span class="chip">TypeScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Next.js</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Python</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Redis</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Kubernetes</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Azure</span>
+          <span class="chip">OpenAI API</span>
+          <span class="chip">TensorFlow</span>
+          <span class="chip">LangChain</span>
+        </div>
+      </section>
+
+      <section class="section-pad" id="contact">
+        <div class="cta-panel reveal">
+          <p class="eyebrow">Let us build your next breakthrough</p>
+          <h2>Turn your idea into a premium AI product</h2>
+          <p>Share your email and we will reach out with a tailored roadmap.</p>
+          <form class="cta-form" action="#" method="post">
+            <label class="sr-only" for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="you@company.com" required />
+            <button type="submit">Start With AutoMark Labs</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-pad">
+      <div>
+        <h4>Products</h4>
+        <a href="#">KheloFit</a>
+        <a href="#">TheNurseryGreen</a>
+        <a href="#">HealthWise</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="#services">SaaS Engineering</a>
+        <a href="#services">AI Assistants</a>
+        <a href="#services">Cloud & Data</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#why">About</a>
+        <a href="#contact">Careers</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="X">X / Twitter</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
