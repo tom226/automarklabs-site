@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="AutoMark Labs social preview image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f9ff"/>
+      <stop offset="100%" stop-color="#e7efff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3f68ff"/>
+      <stop offset="100%" stop-color="#1dd3f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.55">
+    <path d="M0 96h1200M0 196h1200M0 296h1200M0 396h1200M0 496h1200" stroke="#b8c8ec"/>
+    <path d="M120 0v630M280 0v630M440 0v630M600 0v630M760 0v630M920 0v630M1080 0v630" stroke="#b8c8ec"/>
+  </g>
+  <circle cx="940" cy="120" r="120" fill="#dbe8ff"/>
+  <circle cx="980" cy="500" r="180" fill="#d7f8ff"/>
+  <text x="90" y="250" font-family="Sora, Segoe UI, sans-serif" font-size="82" font-weight="800" fill="#162643">AutoMark Labs</text>
+  <text x="90" y="334" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="42" font-weight="600" fill="#243e6f">AI Product Development | SaaS | Cloud Engineering</text>
+  <rect x="90" y="390" width="560" height="12" rx="6" fill="url(#accent)"/>
+  <text x="90" y="470" font-family="Space Grotesk, Segoe UI, sans-serif" font-size="34" fill="#38588f">Build with AI precision and product elegance.</text>
+</svg>
